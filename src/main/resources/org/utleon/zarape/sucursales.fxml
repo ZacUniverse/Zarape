@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
@@ -10,21 +11,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.utleon.zarape.ControllerSucursal">
+<AnchorPane prefHeight="579.0" prefWidth="800.0" stylesheets="@style/sucursalStyle.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.utleon.zarape.ControllerSucursal">
     <children>
-        <GridPane alignment="center" hgap="10" vgap="10" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <!-- Título principal -->
+        <Label fx:id="txtLabelHeader" alignment="CENTER" layoutX="10.0" layoutY="14.0" styleClass="label-header" text="Gestión de Sucursales" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+            <font>
+                <Font size="41.0" />
+            </font>
+        </Label>
 
-            <!-- Column constraints for consistent sizing -->
+        <!-- GridPane ajustado -->
+        <GridPane alignment="center" hgap="10" vgap="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
             <columnConstraints>
-                <ColumnConstraints halignment="RIGHT" minWidth="100" />
-                <ColumnConstraints halignment="LEFT" minWidth="200" />
+                <ColumnConstraints percentWidth="20.0" />
+                <ColumnConstraints percentWidth="20.0" />
+                <ColumnConstraints percentWidth="20.0" />
+                <ColumnConstraints percentWidth="20.0" />
+                <ColumnConstraints percentWidth="20.0" />
             </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="20.0" />
+                <RowConstraints percentHeight="20.0" />
+                <RowConstraints percentHeight="20.0" />
+                <RowConstraints percentHeight="20.0" />
+                <RowConstraints percentHeight="20.0" />
+            </rowConstraints>
 
-            <!-- Labels and Fields -->
-            <Label text="ID Sucursal:" />
+            <!-- Contenido del GridPane -->
+            <Label text="ID:" />
             <TextField fx:id="txtIdSucursal" GridPane.columnIndex="1" />
 
             <Label text="Nombre:" GridPane.rowIndex="1" />
@@ -39,65 +57,59 @@
             <Label text="Foto (URL):" GridPane.rowIndex="4" />
             <TextField fx:id="txtFoto" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 
-            <Label text="URL Web:" GridPane.rowIndex="5" />
-            <TextField fx:id="txtUrl" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="URL:" GridPane.columnIndex="2" />
+            <TextField fx:id="txtUrl" GridPane.columnIndex="3" />
 
-            <Label text="Horarios:" GridPane.rowIndex="6" />
-            <TextField fx:id="txtHorarios" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Horarios:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="txtHorarios" GridPane.columnIndex="3" GridPane.rowIndex="1" />
 
-            <Label text="Calle:" GridPane.rowIndex="7" />
-            <TextField fx:id="txtCalle" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Calle:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="txtCalle" GridPane.columnIndex="3" GridPane.rowIndex="2" />
 
-            <Label text="Número de Calle:" GridPane.rowIndex="8" />
-            <TextField fx:id="txtNumCalle" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label text="Número de Calle:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="txtNumCalle" GridPane.columnIndex="3" GridPane.rowIndex="3" />
 
-            <Label text="Colonia:" GridPane.rowIndex="9" />
-            <TextField fx:id="txtColonia" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="Colonia:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="txtColonia" GridPane.columnIndex="3" GridPane.rowIndex="4" />
 
-            <Label text="Ciudad:" GridPane.rowIndex="10" />
-            <ComboBox fx:id="txtCiudad" prefHeight="25.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label text="Ciudad:" GridPane.columnIndex="4" />
+            <ComboBox fx:id="txtCiudad" prefHeight="25.0" prefWidth="180.0" GridPane.columnIndex="4" />
 
-            <Label text="Activo:" GridPane.rowIndex="11" />
-            <CheckBox fx:id="txtEstatus" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-
-            <!-- Buttons -->
-            <Button fx:id="btnGuardar" text="Guardar" GridPane.rowIndex="12" />
-            <Button fx:id="btnCancelar" alignment="BASELINE_RIGHT" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="12" />
-            <rowConstraints>
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-                <RowConstraints />
-            </rowConstraints>
+            <!-- Botones más grandes -->
+            <Button fx:id="btnGuardar" prefHeight="49.0" prefWidth="148.0" text="Guardar" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="btnCancelar" prefHeight="49.0" prefWidth="152.0" text="Cancelar" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <HBox prefHeight="0.0" prefWidth="148.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                <children>
+                    <Label prefHeight="17.0" prefWidth="66.0" text="Activo:">
+                        <padding>
+                            <Insets top="5.0" />
+                        </padding>
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Label>
+                    <CheckBox fx:id="txtEstatus">
+                        <HBox.margin>
+                            <Insets left="5.0" right="5.0" top="5.0" />
+                        </HBox.margin>
+                        <padding>
+                            <Insets left="50.0" right="5.0" />
+                        </padding>
+                    </CheckBox>
+                </children>
+            </HBox>
         </GridPane>
-        <AnchorPane layoutX="353.0" layoutY="20.0" prefHeight="444.0" prefWidth="281.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
-            <children>
-                <TableView fx:id="tblSucursales" layoutX="14.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
-                    <columns>
-                        <TableColumn fx:id="colIdSucursal" maxWidth="80.0" prefWidth="50.0" text="ID " />
-                        <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
-                        <TableColumn fx:id="colDireccion" prefWidth="75.0" text="Dirección" />
-                        <TableColumn fx:id="colEstatus" maxWidth="100.0" minWidth="40.0" prefWidth="70.0" text="Estatus" />
-                    </columns>
-                    <columnResizePolicy>
-                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                    </columnResizePolicy>
-                </TableView>
-                <Label alignment="CENTER" layoutX="200.0" layoutY="14.0" text="Gestión de Sucursales" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <font>
-                        <Font name="DIN Alternate Bold" size="24.0" />
-                    </font>
-                </Label>
-            </children>
+
+        <!-- AnchorPane con TableView -->
+        <AnchorPane layoutY="331.0" prefHeight="228.0" prefWidth="800.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="331.0">
+            <TableView fx:id="tblSucursales" layoutX="91.0" prefHeight="200.0" prefWidth="671.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="79.0">
+                <columns>
+                    <TableColumn fx:id="colIdSucursal" maxWidth="80.0" prefWidth="50.0" text="ID " />
+                    <TableColumn fx:id="colNombre" prefWidth="143.0" text="Nombre" />
+                    <TableColumn fx:id="colDireccion" prefWidth="394.0" text="Dirección" />
+                    <TableColumn fx:id="colEstatus" maxWidth="354.0" minWidth="40.0" prefWidth="92.0" text="Estatus" />
+                </columns>
+            </TableView>
         </AnchorPane>
     </children>
 </AnchorPane>

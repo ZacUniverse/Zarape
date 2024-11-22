@@ -1,0 +1,76 @@
+/* Estilo general para el AnchorPane */
+.anchor-pane {
+    -fx-background-color: #FFF3E0; /* Fondo amarillo claro */
+}
+
+/* Estilo para el GridPane */
+.grid-pane {
+    -fx-background-color: #FFE4B5; /* Fondo beige amarillento */
+    -fx-padding: 20px;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-border-color: #D2691E; /* Borde marrón rojizo */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Estilo para los Label */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black; /* Texto en negro */
+}
+
+/* Estilo para los TextField y ComboBox */
+.text-field, .combo-box {
+    -fx-background-color: #FFF8DC; /* Fondo amarillo claro */
+    -fx-border-color: #D2691E; /* Borde marrón rojizo */
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-font-size: 12px;
+}
+
+/* Estilo para los CheckBox */
+.check-box {
+    -fx-font-size: 14px;
+    -fx-text-fill: black; /* Texto en negro */
+}
+
+/* Estilo para los Button */
+.button {
+    -fx-background-color: #FF4500; /* Naranja rojizo */
+    -fx-text-fill: black; /* Texto en negro */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-color: #8B0000; /* Borde rojo oscuro */
+    -fx-border-width: 2px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+.button:hover {
+    -fx-background-color: #FF6347; /* Rojo tomate al pasar el mouse */
+}
+
+/* Estilo para el TableView */
+.table-view {
+    -fx-background-color: #FFF8DC; /* Fondo amarillo claro */
+    -fx-border-color: #D2691E; /* Borde marrón rojizo */
+    -fx-border-width: 2px;
+    -fx-font-size: 12px;
+}
+
+.table-column {
+    -fx-background-color: #FFD700; /* Amarillo dorado */
+    -fx-text-fill: black; /* Texto en negro */
+    -fx-font-weight: bold;
+}
+
+/* Estilo para el encabezado principal */
+.label-header {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8B0000; /* Rojo oscuro */
+    -fx-alignment: center;
+}
