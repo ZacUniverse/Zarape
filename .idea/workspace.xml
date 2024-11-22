@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="435d4e25-96a1-4d38-b4e7-800d88ed5fee" name="Changes" comment="Creacion del proyecto Zarape">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/ControllerPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/Globals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/model/Ciudad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/model/Estado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/model/Sucursal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/utleon/zarape/home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/utleon/zarape/sucursales.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/utleon/zarape/ControllerSucursal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/utleon/zarape/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/utleon/zarape/principal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +61,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/marti/Downloads/ProyectoElZarapeJavafx-pro/ProyectoElZarapeJavafx-pro",
+    "last_opened_file_path": "C:/Users/marti/IdeaProjects/Zarape",
     "settings.editor.selected.configurable": "vcs.log"
   }
 }]]></component>

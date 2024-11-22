@@ -26,7 +26,7 @@ tasks.withType(JavaCompile) {
 
 application {
   mainModule = 'org.utleon.zarape'
-  mainClass = 'org.utleon.zarape.HelloApplication'
+  mainClass = 'org.utleon.zarape.Main'
 }
 
 javafx {
@@ -38,6 +38,8 @@ dependencies {
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+  implementation("com.konghq:unirest-java:3.11.12")
+  implementation("com.google.code.gson:gson:2.11.0")
 }
 
 test {
