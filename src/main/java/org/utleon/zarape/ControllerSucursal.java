@@ -223,9 +223,9 @@ public class ControllerSucursal {
             String sucursalJson = gson.toJson(sucursal);
             System.out.println(sucursalJson);
 
-            HttpResponse<String> response = Unirest.post(globals.BASE_URL + "sucursal/save")
+            HttpResponse<String> response = Unirest.post(globals.BASE_URL + "sucursal/insertar")
                     .header("Content-Type", "application/x-www-form-urlencoded")
-                    .field("sucursal",sucursalJson) // Enviar el JSON por el body de la petición
+                    .field("datosSucursal",sucursalJson) // Enviar el JSON por el body de la petición
                     .asString();
 
             // Validar la respuesta
