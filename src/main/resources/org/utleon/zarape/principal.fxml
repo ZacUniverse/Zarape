@@ -10,7 +10,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" stylesheets="@style/principalStyle.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.utleon.zarape.ControllerPrincipal">
   <top>
-    <HBox prefHeight="100.0" prefWidth="1000.0" styleClass="menu-bar" BorderPane.alignment="CENTER">
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1000.0" spacing="10.0" styleClass="menu-bar" BorderPane.alignment="CENTER">
       <children>
         <HBox fx:id="homeItemBar" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="menu-bar-item">
           <children>
@@ -100,6 +100,6 @@
     </HBox>
   </top>
   <center>
-    <AnchorPane fx:id="mainContainer" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    <AnchorPane fx:id="mainContainer" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
   </center>
 </BorderPane>

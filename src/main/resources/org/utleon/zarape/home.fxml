@@ -8,17 +8,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <VBox alignment="CENTER" layoutX="152.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
             <children>
                 <Label text="Bienvenido">
                     <font>
-                        <Font size="48.0" />
+                        <Font name="Californian FB Italic" size="72.0" />
                     </font>
                 </Label>
-                <ImageView fitHeight="300.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="700.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@img/logoZarape.png" />
                     </image>

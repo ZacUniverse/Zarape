@@ -25,13 +25,13 @@
         </Label>
 
         <!-- GridPane ajustado -->
-        <GridPane alignment="center" hgap="10" vgap="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+        <GridPane alignment="CENTER" hgap="10" vgap="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
             <columnConstraints>
-                <ColumnConstraints percentWidth="20.0" />
-                <ColumnConstraints percentWidth="20.0" />
-                <ColumnConstraints percentWidth="20.0" />
-                <ColumnConstraints percentWidth="20.0" />
-                <ColumnConstraints percentWidth="20.0" />
+                <ColumnConstraints percentWidth="11.0" />
+                <ColumnConstraints percentWidth="22.0" />
+                <ColumnConstraints percentWidth="16.0" />
+                <ColumnConstraints percentWidth="23.0" />
+                <ColumnConstraints percentWidth="28.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="20.0" />
@@ -42,42 +42,69 @@
             </rowConstraints>
 
             <!-- Contenido del GridPane -->
-            <Label text="ID:" />
+            <Label text="ID:">
+            <GridPane.margin>
+               <Insets left="30.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtIdSucursal" GridPane.columnIndex="1" />
 
-            <Label text="Nombre:" GridPane.rowIndex="1" />
+            <Label text="Nombre:" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
-            <Label text="Latitud:" GridPane.rowIndex="2" />
+            <Label text="Latitud:" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets left="13.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtLatitud" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
-            <Label text="Longitud:" GridPane.rowIndex="3" />
+            <Label text="Longitud:" GridPane.rowIndex="3">
+            <GridPane.margin>
+               <Insets left="9.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtLongitud" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
-            <Label text="Foto (URL):" GridPane.rowIndex="4" />
+            <Label text="Foto (URL):" GridPane.rowIndex="4">
+            <GridPane.margin>
+               <Insets left="2.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtFoto" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 
-            <Label text="URL:" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" text="URL:" GridPane.columnIndex="2">
+            <GridPane.margin>
+               <Insets left="42.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtUrl" GridPane.columnIndex="3" />
 
-            <Label text="Horarios:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Horarios:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets left="28.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtHorarios" GridPane.columnIndex="3" GridPane.rowIndex="1" />
 
-            <Label text="Calle:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="Calle:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets left="40.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtCalle" GridPane.columnIndex="3" GridPane.rowIndex="2" />
 
             <Label text="Número de Calle:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <TextField fx:id="txtNumCalle" GridPane.columnIndex="3" GridPane.rowIndex="3" />
 
-            <Label text="Colonia:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="Colonia:" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <GridPane.margin>
+               <Insets left="30.0" />
+            </GridPane.margin></Label>
             <TextField fx:id="txtColonia" GridPane.columnIndex="3" GridPane.rowIndex="4" />
 
             <Label text="Ciudad:" GridPane.columnIndex="4" />
-            <ComboBox fx:id="txtCiudad" prefHeight="25.0" prefWidth="180.0" GridPane.columnIndex="4" />
+            <ComboBox fx:id="txtCiudad" prefHeight="25.0" prefWidth="180.0" promptText="Ciudad" GridPane.columnIndex="4" />
 
             <!-- Botones más grandes -->
             <Button fx:id="btnGuardar" prefHeight="49.0" prefWidth="148.0" text="Guardar" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Button fx:id="btnCancelar" prefHeight="49.0" prefWidth="152.0" text="Cancelar" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button fx:id="btnCancelar" prefHeight="50.0" prefWidth="148.0" text="Cancelar" GridPane.columnIndex="4" GridPane.rowIndex="4" />
             <HBox prefHeight="0.0" prefWidth="148.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                 <children>
                     <Label prefHeight="17.0" prefWidth="66.0" text="Activo:">
@@ -85,12 +112,12 @@
                             <Insets top="5.0" />
                         </padding>
                         <HBox.margin>
-                            <Insets />
+                            <Insets left="10.0" top="8.0" />
                         </HBox.margin>
                     </Label>
-                    <CheckBox fx:id="txtEstatus">
+                    <CheckBox fx:id="txtEstatus" alignment="CENTER" contentDisplay="CENTER">
                         <HBox.margin>
-                            <Insets left="5.0" right="5.0" top="5.0" />
+                            <Insets left="5.0" right="5.0" top="12.0" />
                         </HBox.margin>
                         <padding>
                             <Insets left="50.0" right="5.0" />
@@ -98,6 +125,9 @@
                     </CheckBox>
                 </children>
             </HBox>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
         </GridPane>
 
         <!-- AnchorPane con TableView -->
@@ -109,6 +139,9 @@
                     <TableColumn fx:id="colDireccion" prefWidth="394.0" text="Dirección" />
                     <TableColumn fx:id="colEstatus" maxWidth="354.0" minWidth="40.0" prefWidth="92.0" text="Estatus" />
                 </columns>
+            <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
             </TableView>
         </AnchorPane>
     </children>
