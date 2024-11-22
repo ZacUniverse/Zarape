@@ -35,7 +35,7 @@ public class ControllerPrincipal {
 
     private void loadFXML(String fxml) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/utleon/muestra_elzarape/" + fxml + ".fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/utleon/zarape/" + fxml + ".fxml"));
             AnchorPane newLoadedPane = loader.load();
             AnchorPane.setTopAnchor(newLoadedPane, 0.0);
             AnchorPane.setRightAnchor(newLoadedPane, 0.0);
